@@ -492,7 +492,7 @@
             </span>
             <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
           </summary>
-          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed">
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
             Bạn hoàn toàn yên tâm! Trong quá trình niềng, xương ổ răng sẽ có hiện tượng tiêu xương sinh lý ở phía chịu lực và bồi đắp xương mới ở phía đối diện để răng di chuyển. Răng sẽ hơi lung lay nhẹ và chắc chắn trở lại sau khi kết thúc điều trị.
           </div>
         </details>
@@ -931,7 +931,7 @@
         </button>
 
         <!-- 5. ALBUM 5: KÉO RĂNG TỰ NHIÊN THAY THẾ RĂNG MẤT -->
-        <button onclick="openAlbum('album5', 'Album 05 • Kéo Răng Tự Nhiên Thay Răng Mất', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <button onclick="openAlbum('album5', 'Album 05 • Kéo Răng TỰ Nhiên Thay Răng Mất', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg shrink-0 border border-emerald-500/30">
               <i class="fa-solid fa-arrows-rotate"></i>
@@ -1148,11 +1148,34 @@
     }
 
     // =========================================================================
-    // KHU VỰC TÙY BIẾN CHÚ THÍCH CHO ALBUM 8 (BẠN ĐỌC ĐỂ TÔI ĐIỀN VÀO ĐÂY)
+    // KHU VỰC TÙY BIẾN CHÚ THÍCH CHO TỪNG ẢNH TRONG ALBUM 8
     // =========================================================================
     const customCaptions = {
       'album8': {
-        // Sẽ được cập nhật chính xác theo danh sách bạn gửi
+        1: "Trưởng phòng chỉnh nha, Nha khoa Quang Hưng (2022)",
+        2: "Thăm khám cho bệnh nhân tại nha khoa",
+        3: "Dịch thuật Hội nghị Chỉnh Nha OFFLINE dành cho các bác sĩ",
+        4: "Hội trường dịch thuật",
+        5: "Hỗ trợ giáo sư giải thích các vấn đề chuyên môn cho các bác sĩ",
+        6: "Hội Nghị Online về nắn chỉnh răng",
+        7: "Cộng đồng sinh hoạt các bác sĩ trên Zoom",
+        8: "Học tập tại trường Đại học Niigata, Nhật Bản",
+        9: "Trường Đại học Niigata, Nhật Bản năm 2016",
+        10: "Trong phòng thí nghiệm trường Đại học Niigata, Nhật Bản",
+        11: "Cộng đồng sinh viên quốc tế tại trường Đại học Niigata, Nhật Bản",
+        12: "Giáo viên hướng dẫn và phụ trách tại trường Đại học Niigata, Nhật Bản",
+        13: "Tại khoa Răng Trẻ Em, trường Đại học Mahidol, Thái Lan",
+        14: "Năm thứ 6, Đại học Y Hà Nội",
+        15: "Năm thứ hai, Đại học Y Hà Nội",
+        16: "Năm thứ nhất, Đại học Y Hà Nội",
+        17: "Tham gia khám chữa bệnh từ thiện cùng Hội sự nghiệp từ thiện Minh Đức",
+        18: "Khám chữa bệnh từ thiện tại Hà Nội",
+        19: "Khám chữa bệnh tình nguyện tại Lào Cai",
+        20: "Khám chữa bệnh tình nguyện tại Hà Giang",
+        21: "Khám chữa bệnh tình nguyện tại Tuyên Quang",
+        22: "Tập thể anh chị em bác sĩ tham gia tình nguyện khám chữa bệnh cho các em học sinh ở trường tiểu học",
+        23: "Khám chữa bệnh và được bệnh nhân yêu quý",
+        24: "Chụp ảnh cùng Giáo sư Kwang-Chul Choy tại Văn Miếu Quốc Tử Giám, Hà Nội"
       }
     };
 
@@ -1206,7 +1229,7 @@
         }
 
         const caption = document.createElement('div');
-        caption.className = 'text-[11px] text-slate-300 font-semibold px-1 text-center';
+        caption.className = 'text-[11px] text-slate-300 font-semibold px-2 py-1 text-center bg-slate-950/60 rounded-lg border border-slate-800/80 leading-snug';
         caption.innerText = captionText;
 
         imgCard.appendChild(img);
