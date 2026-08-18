@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Cẩm Nang Niềng Răng • Nha Khoa Thái Dung</title>
 
-  <!-- PWA Settings & Mobile Web App -->
+  <!-- PWA Settings & Web App Manifest -->
+  <link rel="manifest" href="./manifest.json">
   <link rel="icon" type="image/png" href="./Logo.png">
   <link rel="apple-touch-icon" href="./Logo.png">
   <meta name="theme-color" content="#0d9488">
@@ -121,7 +122,7 @@
         </div>
       </div>
 
-      <!-- CHECKLIST 3 VIỆC CẦN LÀM TRƯỚC KHI ĐI TÁI KHÁM (ĐÃ FIX TRÀN CHỮ VÀ BỔ SUNG ICON) -->
+      <!-- CHECKLIST 3 VIỆC CẦN LÀM TRƯỚC KHI ĐI TÁI KHÁM -->
       <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md overflow-hidden">
         <div class="flex items-center justify-between gap-1.5 flex-wrap">
           <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider min-w-0">
@@ -589,7 +590,7 @@
         <span>Quay về Trang 1: Hướng Dẫn Cơ Bản & Cứu Hộ</span>
       </button>
 
-      <!-- 1. HƯỚNG DẪN CHĂM SÓC & VỆ SINH MINIVIS (ĐƯA LÊN VỊ TRÍ ĐẦU TIÊN) -->
+      <!-- 1. HƯỚNG DẪN CHĂM SÓC & VỆ SINH MINIVIS (VỊ TRÍ 1) -->
       <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
@@ -627,7 +628,7 @@
         </details>
       </div>
 
-      <!-- 2. LƯU Ý KHI GẮN CỤC NÂNG KHỚP CẮN (VỊ TRÍ THỨ HAI) -->
+      <!-- 2. LƯU Ý KHI GẮN CỤC NÂNG KHỚP CẮN (VỊ TRÍ 2) -->
       <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
@@ -651,7 +652,7 @@
         </details>
       </div>
 
-      <!-- 3. BÀI TẬP CƠ CHỨC NĂNG & ĐẶT VỊ TRÍ LƯỠI (VỊ TRÍ THỨ BA) -->
+      <!-- 3. BÀI TẬP CƠ CHỨC NĂNG & ĐẶT VỊ TRÍ LƯỠI (VỊ TRÍ 3) -->
       <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
@@ -1082,7 +1083,7 @@
     <i class="fa-solid fa-check"></i> Đã sao chép link cẩm nang!
   </div>
 
-  <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG, ĐẾM NGÀY & QR CODE -->
+  <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG, ĐẾM NGÀY, QR CODE & SERVICE WORKER -->
   <script>
     function switchPage(pageNumber) {
       const p1 = document.getElementById('page-1');
@@ -1180,7 +1181,15 @@
       }
     }
 
-    window.addEventListener('DOMContentLoaded', initBracesCounter);
+    // Khởi chạy khi load trang & Đăng ký Service Worker cho PWA
+    window.addEventListener('DOMContentLoaded', () => {
+      initBracesCounter();
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').catch((err) => {
+          console.log('SW register failed:', err);
+        });
+      }
+    });
   </script>
 </body>
 </html>
