@@ -69,7 +69,7 @@
     <!-- ==================== NỘI DUNG TRANG 1 (CƠ BẢN & CỨU HỘ) ==================== -->
     <div id="page-1" class="space-y-4">
 
-      <!-- TIỆN ÍCH ĐẾM NGÀY NIỀNG RĂNG (BRACES DAY COUNTER) -->
+      <!-- TIỆN ÍCH ĐẾM NGÀY NIỀNG RĂNG (ĐÃ NÂNG CẤP THUẬT TOÁN NĂM - THÁNG - NGÀY) -->
       <div class="p-3.5 rounded-2xl bg-gradient-to-r from-teal-950/70 via-slate-800 to-indigo-950/70 border border-teal-500/40 shadow-md space-y-2.5">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-1.5 text-teal-300 font-bold text-xs uppercase tracking-wider">
@@ -81,14 +81,16 @@
           </button>
         </div>
 
-        <div id="counter-display" class="flex items-center justify-between gap-2 p-2.5 rounded-xl bg-slate-900/90 border border-slate-700/80">
-          <div>
-            <div class="text-[11px] text-slate-400">Bạn đã đồng hành được:</div>
-            <div class="text-xs text-teal-300 font-medium" id="start-date-text">Chưa chọn ngày bắt đầu</div>
+        <div id="counter-display" class="p-3 rounded-xl bg-slate-900/90 border border-slate-700/80 space-y-1">
+          <div class="flex items-center justify-between gap-2">
+            <div class="text-[11px] text-slate-400">Hành trình nụ cười:</div>
+            <div class="text-[11px] text-slate-400" id="start-date-text">Bắt đầu: --/--/----</div>
           </div>
-          <div class="text-right">
-            <div class="text-2xl font-extrabold text-teal-400 leading-none" id="days-count">0</div>
-            <div class="text-[10px] text-slate-400 uppercase font-semibold">Ngày</div>
+          <div class="text-base sm:text-lg font-extrabold text-teal-300 tracking-tight" id="duration-human-text">
+            Chưa thiết lập ngày gắn mắc cài
+          </div>
+          <div class="text-[10px] text-slate-500 font-medium" id="total-days-subtext">
+            Bấm "Đổi ngày" để lưu mốc bắt đầu niềng răng của bạn
           </div>
         </div>
 
@@ -1083,7 +1085,7 @@
     <i class="fa-solid fa-check"></i> Đã sao chép link cẩm nang!
   </div>
 
-  <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG, ĐẾM NGÀY, QR CODE & SERVICE WORKER -->
+  <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG, ĐẾM THỜI GIAN & QR CODE -->
   <script>
     function switchPage(pageNumber) {
       const p1 = document.getElementById('page-1');
@@ -1131,26 +1133,69 @@
       });
     }
 
-    // Logic Đếm ngày niềng răng (Lưu vào localStorage)
+    // Thuật toán tính Năm - Tháng - Ngày chuẩn xác
+    function calculateExactDuration(startDate, endDate) {
+      let years = endDate.getFullYear() - startDate.getFullYear();
+      let months = endDate.getMonth() - startDate.getMonth();
+      let days = endDate.getDate() - startDate.getDate();
+
+      if (days < 0) {
+        months -= 1;
+        const prevMonthLastDay = new Date(endDate.getFullYear(), endDate.getMonth(), 0).getDate();
+        days += prevMonthLastDay;
+      }
+
+      if (months < 0) {
+        years -= 1;
+        months += 12;
+      }
+
+      return { years, months, days };
+    }
+
+    // Logic Đếm thời gian niềng răng
     function initBracesCounter() {
       const savedDate = localStorage.getItem('thaidung_braces_start_date');
       if (savedDate) {
         updateCounterDisplay(savedDate);
       } else {
-        document.getElementById('start-date-text').innerText = 'Bấm "Đổi ngày" để nhập';
-        document.getElementById('days-count').innerText = '0';
+        document.getElementById('start-date-text').innerText = 'Bắt đầu: --/--/----';
+        document.getElementById('duration-human-text').innerText = 'Chưa thiết lập ngày gắn mắc cài';
+        document.getElementById('total-days-subtext').innerText = 'Bấm "Đổi ngày" để lưu mốc bắt đầu niềng răng của bạn';
       }
     }
 
     function updateCounterDisplay(dateStr) {
       const startDate = new Date(dateStr);
       const today = new Date();
+
+      if (startDate > today) {
+        const formattedDate = startDate.toLocaleDateString('vi-VN');
+        document.getElementById('start-date-text').innerText = `Bắt đầu: ${formattedDate}`;
+        document.getElementById('duration-human-text').innerText = 'Ngày hẹn gắn mắc cài sắp tới';
+        document.getElementById('total-days-subtext').innerText = 'Hãy chuẩn bị tâm lý thật thoải mái nhé!';
+        return;
+      }
+
       const diffTime = today - startDate;
-      const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
+      const totalDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+      const { years, months, days } = calculateExactDuration(startDate, today);
+
+      let resultText = '';
+      if (years > 0) {
+        resultText += `${years} năm `;
+      }
+      if (months > 0) {
+        resultText += `${months} tháng `;
+      }
+      if (days > 0 || (years === 0 && months === 0)) {
+        resultText += `${days} ngày`;
+      }
 
       const formattedDate = startDate.toLocaleDateString('vi-VN');
       document.getElementById('start-date-text').innerText = `Bắt đầu: ${formattedDate}`;
-      document.getElementById('days-count').innerText = diffDays;
+      document.getElementById('duration-human-text').innerText = `✨ ${resultText.trim()}`;
+      document.getElementById('total-days-subtext').innerText = `(Tổng cộng: ${totalDays} ngày kiên trì đồng hành cùng nụ cười)`;
     }
 
     function changeStartDate() {
