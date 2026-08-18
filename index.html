@@ -25,7 +25,7 @@
     details summary::-webkit-details-marker { display: none; }
   </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased p-4 sm:p-6 selection:bg-teal-500 selection:text-white">
+<body class="bg-slate-900 text-slate-100 min-h-screen font-sans antialiased p-4 sm:p-6 pb-24 selection:bg-teal-500 selection:text-white">
   <div class="max-w-md mx-auto space-y-5">
 
     <!-- 1. HEADER THƯƠNG HIỆU NHA KHOA THÁI DUNG -->
@@ -67,11 +67,28 @@
 
     <!-- 3. GIAI ĐOẠN ĐẦU: 7 NGÀY ĐẦU SAU GẮN MẮC CÀI -->
     <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-4 space-y-3 shadow-md">
-      <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
-        <i class="fa-solid fa-clock-rotate-left"></i>
-        <span>Giai đoạn mới gắn mắc cài (7 ngày đầu)</span>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span>Giai đoạn mới gắn mắc cài (7 ngày đầu)</span>
+        </div>
       </div>
 
+      <!-- VIDEO 1: Sau 48 giờ đầu tiên trải nghiệm niềng răng -->
+      <a href="https://youtu.be/X1AQdLhuW1Q" target="_blank" rel="noopener noreferrer" class="p-3 bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/40 hover:border-amber-400 rounded-xl flex items-center justify-between gap-2.5 transition group">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0 border border-amber-500/30">
+            <i class="fa-brands fa-youtube text-red-500"></i>
+          </div>
+          <div>
+            <div class="font-bold text-white text-xs group-hover:text-amber-200 transition-colors">Video: Trải nghiệm sau 48h đầu gắn mắc cài</div>
+            <div class="text-[11px] text-slate-400">Những điều sẽ diễn ra & cách vượt qua êm ái nhất</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-circle-play text-amber-400 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+      </a>
+
+      <!-- Răng bị ê ẩm -->
       <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
         <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
           <span class="flex items-center gap-2">
@@ -85,6 +102,7 @@
         </div>
       </details>
 
+      <!-- Ăn uống -->
       <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
         <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
           <span class="flex items-center gap-2">
@@ -98,6 +116,7 @@
         </div>
       </details>
 
+      <!-- Sáp nha khoa -->
       <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
         <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
           <span class="flex items-center gap-2">
@@ -113,7 +132,7 @@
       </details>
     </div>
 
-    <!-- 4. VỆ SINH RĂNG MIỆNG CHUẨN KHI NIỀNG (TRỰC QUAN HÓA DỤNG CỤ) -->
+    <!-- 4. VỆ SINH RĂNG MIỆNG CHUẨN KHI NIỀNG -->
     <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-4 space-y-3 shadow-md">
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider">
@@ -154,25 +173,79 @@
           <div class="text-[11px] text-slate-400 leading-tight">Đánh bay mảng bám thức ăn dắt sâu giữa 2 kẽ răng mà bàn chải không tới.</div>
         </div>
 
-        <!-- Bước 4: Nước súc miệng -->
-        <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1.5 hover:border-teal-500/40 transition">
-          <div class="w-8 h-8 rounded-lg bg-purple-950 text-purple-400 flex items-center justify-center text-sm border border-purple-800/60 mb-1">
-            <i class="fa-solid fa-bottle-water"></i>
+        <!-- Bước 4: Nước súc miệng (Gắn Video 3) -->
+        <a href="https://youtu.be/uUprFZukayc" target="_blank" rel="noopener noreferrer" class="p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 hover:border-purple-400 space-y-1.5 transition block group">
+          <div class="flex items-center justify-between mb-1">
+            <div class="w-8 h-8 rounded-lg bg-purple-950 text-purple-400 flex items-center justify-center text-sm border border-purple-800/60">
+              <i class="fa-solid fa-bottle-water"></i>
+            </div>
+            <i class="fa-brands fa-youtube text-red-500 text-xs group-hover:scale-110 transition-transform"></i>
           </div>
           <div class="text-[10px] font-bold text-purple-400 uppercase">Bước 4 • Nước súc miệng</div>
-          <div class="font-bold text-white text-[11px]">Ngừa sâu răng & ố vàng</div>
-          <div class="text-[11px] text-slate-400 leading-tight">Súc miệng với dung dịch chứa Fluoride để tái khoáng men răng và giữ hơi thở thơm tho.</div>
-        </div>
+          <div class="font-bold text-white text-[11px] group-hover:text-purple-200 transition-colors">Bí quyết chọn chuẩn &rarr;</div>
+          <div class="text-[11px] text-slate-400 leading-tight">Ngừa ố vàng, sâu răng. Bấm xem cách chọn loại nước súc miệng chuẩn.</div>
+        </a>
       </div>
 
-      <!-- Video hướng dẫn vệ sinh -->
-      <a href="https://www.youtube.com/watch?v=-1giMzWHCR0" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-300 font-semibold text-xs transition">
+      <!-- VIDEO 2: Cách chăm sóc vệ sinh răng miệng khi niềng răng -->
+      <a href="https://youtu.be/lnKaykOuk6g" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-300 font-semibold text-xs transition">
         <i class="fa-brands fa-youtube text-red-500 text-sm"></i>
         <span>Xem Video Hướng Dẫn Vệ Sinh Răng Miệng Chi Tiết</span>
       </a>
     </div>
 
-    <!-- 5. XỬ LÝ CÁC TÌNH HUỐNG THƯỜNG GẶP TẠI NHÀ -->
+    <!-- 5. HƯỚNG DẪN 3 GÓC CHỤP ẢNH KHI CẦN HỘI CHẨN TỪ XA -->
+    <div class="bg-gradient-to-r from-teal-950/60 via-slate-800 to-slate-800 border border-teal-500/40 rounded-2xl p-4 space-y-3 shadow-md">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2 text-teal-300 font-bold text-xs uppercase tracking-wider">
+          <i class="fa-solid fa-camera"></i>
+          <span>Hướng dẫn chụp ảnh gửi Bác sĩ</span>
+        </div>
+        <span class="text-[10px] text-teal-400 font-medium">Chuẩn đoán nhanh</span>
+      </div>
+      <p class="text-xs text-slate-300 leading-relaxed">
+        Khi cần Bác sĩ kiểm tra sự cố từ xa, hãy dùng 2 ngón tay kéo nhẹ khóe môi và chụp <strong>3 góc rõ nét</strong> sau:
+      </p>
+      <div class="grid grid-cols-3 gap-2 text-center text-xs">
+        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700">
+          <div class="text-teal-400 font-bold text-[11px] mb-0.5">Góc 1</div>
+          <div class="text-[11px] text-slate-200 font-semibold">Nhìn thẳng</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Cắn chặt 2 hàm</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700">
+          <div class="text-teal-400 font-bold text-[11px] mb-0.5">Góc 2</div>
+          <div class="text-[11px] text-slate-200 font-semibold">Nghiêng Trái</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Kéo môi lộ răng hàm</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700">
+          <div class="text-teal-400 font-bold text-[11px] mb-0.5">Góc 3</div>
+          <div class="text-[11px] text-slate-200 font-semibold">Nghiêng Phải</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Kéo môi lộ răng hàm</div>
+        </div>
+      </div>
+      <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs shadow-md transition">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Mở Zalo Gửi 3 Góc Ảnh Cho Bác Sĩ</span>
+      </a>
+    </div>
+
+    <!-- 6. QUY TẮC ĐEO THUN LIÊN HÀM (CHO GIAI ĐOẠN KÉO KHỚP CẮN) -->
+    <details class="group bg-slate-800 border border-indigo-500/40 rounded-2xl overflow-hidden shadow-md">
+      <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-indigo-300 select-none">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-ring"></i>
+          <span>Quy tắc vàng khi đeo Thun liên hàm (Kéo khớp cắn)</span>
+        </span>
+        <i class="fa-solid fa-plus text-xs text-indigo-400 group-open:rotate-45 transition-transform"></i>
+      </summary>
+      <div class="p-3.5 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-2 bg-slate-950/40">
+        <div>• <strong>Thời gian đeo:</strong> Đeo liên tục <strong>20 – 22 tiếng/ngày</strong> (chỉ tháo ra khi ăn uống và vệ sinh răng miệng).</div>
+        <div>• <strong>Thay thun mới:</strong> Thay thun mới <strong>2 – 3 lần/ngày</strong> vì thun sẽ bị giãn và mất lực kéo sinh học sau vài tiếng.</div>
+        <div>• <strong>Nếu quên đeo:</strong> Không được đeo gấp đôi số thun vào ngày hôm sau vì lực quá mạnh sẽ gây tổn thương cuống răng. Hãy quay lại lịch đeo đều đặn ngay khi nhớ ra.</div>
+      </div>
+    </details>
+
+    <!-- 7. XỬ LÝ CÁC TÌNH HUỐNG THƯỜNG GẶP TẠI NHÀ -->
     <div class="space-y-2.5 pt-1">
       <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider px-1">
         Cách xử lý các tình huống thường gặp
@@ -240,7 +313,7 @@
       </details>
     </div>
 
-    <!-- 6. HƯỚNG DẪN CÀI APP RA MÀN HÌNH CHÍNH -->
+    <!-- 8. HƯỚNG DẪN CÀI APP RA MÀN HÌNH CHÍNH -->
     <details class="group bg-slate-800/90 border border-teal-500/30 rounded-2xl overflow-hidden shadow-md">
       <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-teal-300 select-none">
         <span class="flex items-center gap-2">
@@ -259,16 +332,16 @@
       </div>
     </details>
 
-    <!-- 7. FOOTER THÔNG TIN PHÒNG KHÁM -->
-    <div class="pt-6 pb-4 border-t border-slate-800 space-y-3 text-center">
-      <div class="flex items-center justify-center gap-2 text-xs flex-wrap">
-        <a href="tel:0349622964" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-teal-400 border border-slate-700 transition">
+    <!-- 9. FOOTER THÔNG TIN PHÒNG KHÁM -->
+    <div class="pt-6 pb-2 border-t border-slate-800 space-y-3 text-center">
+      <div class="flex items-center justify-center gap-2.5 text-xs flex-wrap">
+        <a href="tel:0349622964" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-teal-400 border border-slate-700 transition">
           <i class="fa-solid fa-phone"></i>
           <span>Hotline: <strong>0349622964</strong></span>
         </a>
-        <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-blue-400 border border-slate-700 transition">
-          <i class="fa-solid fa-comments"></i>
-          <span>Zalo: <strong>0349622964</strong></span>
+        <a href="https://www.facebook.com/huuthaihmu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-slate-800 hover:bg-slate-700 text-blue-400 hover:text-blue-300 border border-slate-700 transition">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook: <strong>Dr. Thái</strong></span>
         </a>
       </div>
       <div class="text-[11px] text-slate-400">
@@ -279,8 +352,20 @@
 
   </div>
 
+  <!-- 10. THANH ĐIỀU HƯỚNG NỔI Ở ĐÁY MÀN HÌNH (QUICK FLOATING BAR) -->
+  <div class="fixed bottom-3 left-1/2 -translate-x-1/2 w-[92%] max-w-md bg-slate-900/95 backdrop-blur-md border border-slate-700 p-2 rounded-2xl shadow-2xl z-40 flex items-center justify-between gap-2">
+    <a href="tel:0349622964" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs transition shadow-md">
+      <i class="fa-solid fa-phone"></i>
+      <span>Gọi Bác Sĩ</span>
+    </a>
+    <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs transition shadow-md">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span>Nhắn Zalo</span>
+    </a>
+  </div>
+
   <!-- Toast Copy Link -->
-  <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-teal-500 text-slate-950 font-bold px-4 py-2 rounded-full text-xs shadow-2xl transition duration-300 opacity-0 pointer-events-none z-50 flex items-center gap-1.5">
+  <div id="toast" class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-teal-500 text-slate-950 font-bold px-4 py-2 rounded-full text-xs shadow-2xl transition duration-300 opacity-0 pointer-events-none z-50 flex items-center gap-1.5">
     <i class="fa-solid fa-check"></i> Đã sao chép link cẩm nang!
   </div>
 
