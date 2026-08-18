@@ -764,7 +764,7 @@
           </div>
           <div>
             <div class="font-bold text-white text-xs sm:text-sm group-hover:text-indigo-200 transition-colors">Xem Trang 3: Ca Trước & Sau Điều Trị</div>
-            <div class="text-[11px] text-slate-400">Khám phá 3 ca tiêu biểu & 9 album thực tế của Dr. Thái</div>
+            <div class="text-[11px] text-slate-400">Khám phá 3 ca tiêu biểu & 8 album thực tế của Dr. Thái</div>
           </div>
         </div>
         <i class="fa-solid fa-chevron-right text-indigo-400 text-sm group-hover:translate-x-1 transition-transform"></i>
@@ -772,7 +772,7 @@
 
     </div>
 
-    <!-- ==================== NỘI DUNG TRANG 3 (3 CASE NỔI BẬT + 9 ALBUM TÁCH BIỆT) ==================== -->
+    <!-- ==================== NỘI DUNG TRANG 3 (3 CASE NỔI BẬT + 8 ALBUM THEO TRẬT TỰ MỚI) ==================== -->
     <div id="page-3" class="space-y-4 hidden">
 
       <!-- Nút quay lại Trang 1 -->
@@ -848,17 +848,17 @@
         </div>
       </div>
 
-      <!-- PHẦN 2: THƯ VIỆN ĐẦY ĐỦ 9 ALBUM TÁCH BIỆT RÕ RÀNG -->
+      <!-- PHẦN 2: THƯ VIỆN 8 ALBUM (ĐÃ XẾP ĐÚNG THỨ TỰ THEO YÊU CẦU) -->
       <div class="space-y-2.5 pt-2">
         <div class="flex items-center justify-between px-1">
           <div class="flex items-center gap-2 text-xs font-bold text-indigo-300 uppercase tracking-wider">
             <i class="fa-solid fa-images"></i>
-            <span>Thư Viện 9 Album Lâm Sàng Thực Tế</span>
+            <span>Thư Viện Album Lâm Sàng Thực Tế</span>
           </div>
           <span class="text-[10px] text-teal-400 font-semibold">Chạm để mở</span>
         </div>
 
-        <!-- 1. ALBUM 1 -->
+        <!-- 1. HÔ VẨU & KHỚP CẮN SÂU (Gọi folder: album1) -->
         <button onclick="openAlbum('album1', 'Album 01 • Hô Vẩu & Khớp Cắn Sâu', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-amber-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-base shrink-0 border border-amber-500/30">
@@ -876,15 +876,15 @@
           </div>
         </button>
 
-        <!-- 2. ALBUM 2 -->
-        <button onclick="openAlbum('album2', 'Album 02 • Răng Khểnh & Chen Chúc', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-blue-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <!-- 2. RĂNG KHỂNH, LẠC CHỖ & CHEN CHÚC (Gọi folder: album2) -->
+        <button onclick="openAlbum('album2', 'Album 02 • Răng Khểnh, Lạc Chỗ & Chen Chúc', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-blue-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-base shrink-0 border border-blue-500/30">
               <i class="fa-solid fa-wand-magic-sparkles"></i>
             </div>
             <div class="min-w-0">
               <div class="text-[9px] font-bold text-blue-400 uppercase tracking-wider">Album 02 • Chỉnh Nha</div>
-              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-blue-200 transition-colors truncate">Răng Khểnh Lạc Chỗ & Chen Chúc</div>
+              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-blue-200 transition-colors truncate">Răng Khểnh, Lạc Chỗ & Chen Chúc</div>
               <div class="text-[10px] text-slate-400 truncate">Dàn đều cung răng, mở rộng cung cười hoàn mỹ</div>
             </div>
           </div>
@@ -894,7 +894,7 @@
           </div>
         </button>
 
-        <!-- 3. ALBUM 3 -->
+        <!-- 3. KHỚP CẮN NGƯỢC, MÓM (Gọi folder: album3) -->
         <button onclick="openAlbum('album3', 'Album 03 • Khớp Cắn Ngược & Móm', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-rose-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-base shrink-0 border border-rose-500/30">
@@ -912,15 +912,15 @@
           </div>
         </button>
 
-        <!-- 4. ALBUM 4 -->
-        <button onclick="openAlbum('album4', 'Album 04 • Răng Thưa & Khe Hở Cung Răng', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-teal-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <!-- 4. RĂNG THƯA, KHE HỞ GIỮA RĂNG (Gọi folder: album4) -->
+        <button onclick="openAlbum('album4', 'Album 04 • Răng Thưa & Khe Hở Giữa Răng', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-teal-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-base shrink-0 border border-teal-500/30">
               <i class="fa-solid fa-grip-lines-vertical"></i>
             </div>
             <div class="min-w-0">
               <div class="text-[9px] font-bold text-teal-400 uppercase tracking-wider">Album 04 • Chỉnh Nha</div>
-              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-teal-200 transition-colors truncate">Răng Thưa • Khe Hở Cung Răng</div>
+              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-teal-200 transition-colors truncate">Răng Thưa • Khe Hở Giữa Răng</div>
               <div class="text-[10px] text-slate-400 truncate">Đóng khít toàn bộ khe thưa, cải thiện phát âm</div>
             </div>
           </div>
@@ -930,7 +930,7 @@
           </div>
         </button>
 
-        <!-- 5. ALBUM 5 -->
+        <!-- 5. KÉO RĂNG TỰ NHIÊN THAY RĂNG MẤT (Gọi folder: album5) -->
         <button onclick="openAlbum('album5', 'Album 05 • Kéo Răng Tự Nhiên Thay Răng Mất', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-emerald-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg shrink-0 border border-emerald-500/30">
@@ -948,26 +948,26 @@
           </div>
         </button>
 
-        <!-- 6. ALBUM 6 -->
-        <button onclick="openAlbum('album6', 'Album 06 • Niềng Lại Do Chỉnh Nha Hỏng Cơ Sở Khác', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-purple-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <!-- 6. NIỀNG LẠI DO CHỈNH NHA HỎNG NƠI KHÁC (Gọi folder: album8 - Đưa lên trước Nhổ răng khôn) -->
+        <button onclick="openAlbum('album8', 'Album 06 • Niềng Lại Do Chỉnh Nha Hỏng Cơ Sở Khác', 40)" class="w-full p-3 bg-gradient-to-r from-purple-950/70 via-slate-800 to-slate-800 hover:to-slate-700 border border-purple-500/50 hover:border-purple-400 rounded-2xl flex items-center justify-between gap-3 transition shadow-md group text-left">
           <div class="flex items-center gap-3 min-w-0">
-            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-base shrink-0 border border-purple-500/30">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center text-base shrink-0 border border-purple-500/40">
               <i class="fa-solid fa-shield-halved"></i>
             </div>
             <div class="min-w-0">
-              <div class="text-[9px] font-bold text-purple-400 uppercase tracking-wider">Album 06 • Tái Điều Trị</div>
-              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-purple-200 transition-colors truncate">Niềng Lại Do Chỉnh Nha Hỏng Cơ Sở Khác</div>
-              <div class="text-[10px] text-slate-400 truncate">Khắc phục các ca niềng sai lệch, khớp cắn hở từ nơi khác</div>
+              <div class="text-[9px] font-bold text-purple-400 uppercase tracking-wider">Album 06 • Tái Điều Trị Chuyên Sâu</div>
+              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-purple-200 transition-colors truncate">Niềng Lại Do Chỉnh Nha Hỏng Nơi Khác</div>
+              <div class="text-[10px] text-slate-300 truncate">Khắc phục các ca niềng sai lệch khớp cắn, bật chân răng từ nơi khác</div>
             </div>
           </div>
-          <div class="flex items-center gap-1 text-[10px] text-teal-400 font-bold shrink-0">
+          <div class="flex items-center gap-1 text-[10px] text-purple-300 font-bold shrink-0">
             <span>Mở xem</span>
             <i class="fa-solid fa-chevron-right text-[10px]"></i>
           </div>
         </button>
 
-        <!-- 7. ALBUM 7 -->
-        <button onclick="openAlbum('album7', 'Album 07 • Nhổ Răng Khôn An Toàn', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <!-- 7. NHỔ RĂNG KHÔN AN TOÀN (Gọi folder: album6) -->
+        <button onclick="openAlbum('album6', 'Album 07 • Nhổ Răng Khôn An Toàn', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-base shrink-0 border border-cyan-500/30">
               <i class="fa-solid fa-scissors"></i>
@@ -984,8 +984,8 @@
           </div>
         </button>
 
-        <!-- 8. ALBUM 8 -->
-        <button onclick="openAlbum('album8', 'Album 08 • Hành Trình Học Tập & Hội Nghị Chuyên Môn', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-indigo-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
+        <!-- 8. HỒ SƠ NĂNG LỰC & HỘI NGHỊ ĐÀO TẠO (Gọi folder: album7 - Đã xếp xuống dưới cùng) -->
+        <button onclick="openAlbum('album7', 'Album 08 • Hồ Sơ Năng Lực & Hội Nghị Đào Tạo', 40)" class="w-full p-3 bg-slate-800/90 hover:bg-slate-800 border border-slate-700 hover:border-indigo-500/50 rounded-2xl flex items-center justify-between gap-3 transition shadow-sm group text-left">
           <div class="flex items-center gap-3 min-w-0">
             <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-300 flex items-center justify-center text-lg shrink-0 border border-indigo-500/40">
               <i class="fa-solid fa-graduation-cap"></i>
@@ -997,24 +997,6 @@
             </div>
           </div>
           <div class="flex items-center gap-1 text-[10px] text-indigo-300 font-bold shrink-0">
-            <span>Mở xem</span>
-            <i class="fa-solid fa-chevron-right text-[10px]"></i>
-          </div>
-        </button>
-
-        <!-- 9. ALBUM 9 -->
-        <button onclick="openAlbum('album9', 'Album 09 • Tái Chỉnh Nha Ca Lỗi Phức Tạp', 40)" class="w-full p-3 bg-gradient-to-r from-rose-950/80 via-slate-800 to-slate-800 hover:to-slate-700 border border-rose-500/60 hover:border-rose-400 rounded-2xl flex items-center justify-between gap-3 transition shadow-md group text-left">
-          <div class="flex items-center gap-3 min-w-0">
-            <div class="w-10 h-10 rounded-xl bg-rose-500/20 text-rose-300 flex items-center justify-center text-lg shrink-0 border border-rose-500/40">
-              <i class="fa-solid fa-kit-medical"></i>
-            </div>
-            <div class="min-w-0">
-              <div class="text-[9px] font-bold text-rose-400 uppercase tracking-wider">Album 09 • Chuyên Khoa Sâu</div>
-              <div class="font-bold text-white text-xs sm:text-sm group-hover:text-rose-200 transition-colors truncate">Niềng Răng Lại Cho Ca Chỉnh Nha Lỗi Phức Tạp</div>
-              <div class="text-[10px] text-slate-300 truncate">Khắc phục khớp cắn sai lệch nặng, tiêu xương, bật chân răng</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-1 text-[10px] text-rose-300 font-bold shrink-0">
             <span>Mở xem</span>
             <i class="fa-solid fa-chevron-right text-[10px]"></i>
           </div>
@@ -1082,7 +1064,7 @@
     </a>
   </div>
 
-  <!-- MODAL XEM ẢNH ALBUM (LIGHTBOX) -->
+  <!-- MODAL XEM ẢNH ALBUM (LIGHTBOX VIEWER) -->
   <div id="album-modal" class="fixed inset-0 bg-slate-950/95 backdrop-blur-md z-50 hidden flex flex-col">
     <div class="flex items-center justify-between p-3.5 sm:p-4 border-b border-slate-800 bg-slate-900 sticky top-0 z-10 shadow-lg">
       <div class="min-w-0 pr-2">
@@ -1094,7 +1076,7 @@
       </button>
     </div>
     <div id="album-content" class="flex-1 overflow-y-auto p-3 sm:p-4 space-y-4 max-w-md mx-auto w-full pb-24">
-      <!-- Toàn bộ ảnh sẽ được tải tự động vào đây -->
+      <!-- Toàn bộ ảnh sẽ load tự động vào đây -->
     </div>
   </div>
 
@@ -1194,13 +1176,12 @@
           document.getElementById('album-count-text').innerText = `Đã tải ${loadedCount} ca lâm sàng`;
         };
 
-        // Nếu sai định dạng, tự động đổi qua các đuôi mở rộng khác
+        // Nếu sai định dạng, tự động thử các đuôi file khác
         img.onerror = function() {
           extIndex++;
           if (extIndex < extensions.length) {
             img.src = `./images/${folderName}/${i}.${extensions[extIndex]}`;
           } else {
-            // Khi không còn ảnh ở số thứ tự tiếp theo thì tự ẩn ô trống đi
             imgCard.style.display = 'none';
           }
         };
