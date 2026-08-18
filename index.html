@@ -44,420 +44,552 @@
       </h1>
     </div>
 
-    <!-- 2. NÚT CỨU HỘ SỰ CỐ KHẨN CẤP -->
-    <div class="p-4 rounded-2xl bg-gradient-to-r from-rose-950/80 via-slate-800 to-slate-800 border border-rose-500/50 shadow-lg space-y-2.5">
-      <div class="flex items-center gap-2 text-rose-400 font-bold text-xs sm:text-sm whitespace-nowrap">
-        <i class="fa-solid fa-triangle-exclamation animate-bounce"></i>
-        <span>BẠN ĐANG GẶP SỰ CỐ KHẨN CẤP?</span>
-      </div>
-      <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
-        Bị cọ má, đâm môi, rơi mắc cài hoặc đau nhức bất thường? Bác sĩ luôn sẵn sàng hỗ trợ bạn.
-      </p>
-      <div class="grid grid-cols-2 gap-2 pt-1">
-        <a href="tel:0349622964" class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md transition whitespace-nowrap">
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>Gọi Hotline Bác Sĩ</span>
-        </a>
-        <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-teal-300 font-bold text-xs border border-teal-500/40 transition whitespace-nowrap">
-          <i class="fa-solid fa-comment-medical"></i>
-          <span>Nhắn Zalo Gửi Ảnh</span>
-        </a>
-      </div>
+    <!-- THANH CHUYỂN TRANG NHANH (PAGE SWITCHER TAB) -->
+    <div class="grid grid-cols-2 gap-1.5 p-1 bg-slate-800/90 border border-slate-700 rounded-xl">
+      <button id="tab-btn-1" onclick="switchPage(1)" class="py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-teal-600 text-white shadow-sm">
+        <i class="fa-solid fa-house-medical"></i>
+        <span>1. Hướng Dẫn Cơ Bản</span>
+      </button>
+      <button id="tab-btn-2" onclick="switchPage(2)" class="py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-transparent text-slate-400 hover:text-slate-200">
+        <i class="fa-solid fa-brain"></i>
+        <span>2. Bài Tập & Nâng Cao</span>
+      </button>
     </div>
 
-    <!-- 3. GIAI ĐOẠN ĐẦU: 7 NGÀY ĐẦU SAU GẮN MẮC CÀI -->
-    <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
-      <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
-        <i class="fa-solid fa-clock-rotate-left"></i>
-        <span>Giai đoạn mới gắn mắc cài (7 ngày đầu)</span>
+    <!-- ==================== NỘI DUNG TRANG 1 (CƠ BẢN & CỨU HỘ) ==================== -->
+    <div id="page-1" class="space-y-4">
+
+      <!-- 2. NÚT CỨU HỘ SỰ CỐ KHẨN CẤP -->
+      <div class="p-4 rounded-2xl bg-gradient-to-r from-rose-950/80 via-slate-800 to-slate-800 border border-rose-500/50 shadow-lg space-y-2.5">
+        <div class="flex items-center gap-2 text-rose-400 font-bold text-xs sm:text-sm whitespace-nowrap">
+          <i class="fa-solid fa-triangle-exclamation animate-bounce"></i>
+          <span>BẠN ĐANG GẶP SỰ CỐ KHẨN CẤP?</span>
+        </div>
+        <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+          Bị cọ má, đâm môi, rơi mắc cài hoặc đau nhức bất thường? Bác sĩ luôn sẵn sàng hỗ trợ bạn.
+        </p>
+        <div class="grid grid-cols-2 gap-2 pt-1">
+          <a href="tel:0349622964" class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md transition whitespace-nowrap">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Gọi Hotline Bác Sĩ</span>
+          </a>
+          <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-teal-300 font-bold text-xs border border-teal-500/40 transition whitespace-nowrap">
+            <i class="fa-solid fa-comment-medical"></i>
+            <span>Nhắn Zalo Gửi Ảnh</span>
+          </a>
+        </div>
       </div>
 
-      <!-- VIDEO 1 -->
-      <a href="https://youtu.be/X1AQdLhuW1Q" target="_blank" rel="noopener noreferrer" class="p-3 bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/40 hover:border-amber-400 rounded-xl flex items-center justify-between gap-2.5 transition group">
-        <div class="flex items-center gap-2.5 min-w-0">
-          <div class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0 border border-amber-500/30">
-            <i class="fa-brands fa-youtube text-red-500"></i>
-          </div>
-          <div class="min-w-0">
-            <div class="font-bold text-white text-xs group-hover:text-amber-200 transition-colors truncate">Video: Trải nghiệm 48h đầu gắn mắc cài</div>
-            <div class="text-[11px] text-slate-400 truncate">Những điều sẽ diễn ra & cách vượt qua êm ái</div>
-          </div>
-        </div>
-        <i class="fa-solid fa-circle-play text-amber-400 text-base group-hover:scale-110 transition-transform shrink-0"></i>
-      </a>
-
-      <!-- Răng bị ê ẩm -->
-      <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-face-grimace text-amber-400 shrink-0"></i>
-            <span>Răng bị ê ẩm, căng tức có sao không?</span>
-          </span>
-          <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
-          <p>• <strong>Hiện tượng bình thường:</strong> Răng bắt đầu nhận lực di chuyển nên sẽ hơi ê ẩm trong 3–5 ngày đầu, sau đó sẽ êm dần.</p>
-          <p>• <strong>Cách xử trí:</strong> Ăn đồ mềm, súc miệng nước ấm nhẹ hoặc chườm mát ngoài má. Nếu quá khó chịu, bạn có thể uống 1 viên giảm đau (Paracetamol 500mg) theo hướng dẫn Bác sĩ.</p>
-        </div>
-      </details>
-
-      <!-- Mẹo giảm ê nhức tự nhiên -->
-      <details class="group bg-slate-900/80 border border-teal-500/40 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-teal-300 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-snowflake text-teal-400 shrink-0"></i>
-            <span>Mẹo giảm ê nhức tự nhiên (Không lạm dụng thuốc)</span>
-          </span>
-          <i class="fa-solid fa-plus text-[10px] text-teal-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
-          <p>• <strong>Chườm mát ngoài má:</strong> Dùng khăn bọc đá lạnh áp nhẹ vào má 10–15 phút trong 24–48h đầu giúp co mạch, dịu cơn ê tức rất nhanh.</p>
-          <p>• <strong>Súc miệng nước muối ấm:</strong> Pha nước muối ấm nhạt súc miệng 3–4 lần/ngày giúp kháng viêm, làm dịu niêm mạc nướu và vết cọ xát.</p>
-          <p>• <strong>Thư giãn khớp cắn:</strong> Tránh nghiến hoặc cắn chặt hai hàm răng vào nhau khi đang ê ẩm để dây chằng cuống răng được nghỉ ngơi.</p>
-        </div>
-      </details>
-
-      <!-- Ăn uống -->
-      <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-utensils text-teal-400 shrink-0"></i>
-            <span>Chế độ ăn uống: Nên ăn gì & kiêng gì?</span>
-          </span>
-          <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
-          <p>• <strong class="text-teal-300">Nên ăn:</strong> Cháo, súp, cơm mềm, sinh tố, sữa chua, trứng, thịt băm nhỏ hoặc cắt lát mỏng.</p>
-          <p>• <strong class="text-rose-400">Tuyệt đối tránh:</strong> Cắn đồ cứng (xương, sụn, đá viên), đồ dính (kẹo dẻo, kẹo cao su), không dùng răng cửa để cắn xé quả ổi/táo/bánh mì giòn (hãy cắt nhỏ bằng dao trước khi ăn).</p>
-        </div>
-      </details>
-
-      <!-- Sáp nha khoa -->
-      <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-shield-heart text-blue-400 shrink-0"></i>
-            <span>Hướng dẫn bôi sáp chống cọ xát & nhiệt miệng</span>
-          </span>
-          <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-2 leading-relaxed bg-slate-950/40">
-          <p>1. Lau khô bề mặt mắc cài hoặc đầu dây cung đang bị cọ vào môi/má.</p>
-          <p>2. Lấy 1 lượng sáp nhỏ bằng hạt đậu xanh, dùng ngón tay vo tròn lại.</p>
-          <p>3. Ấn nhẹ và miết miếng sáp phủ kín lên vị trí cọ xát (Tháo sáp ra trước khi ăn uống, nếu lỡ nuốt phải sáp cũng hoàn toàn vô hại).</p>
-        </div>
-      </details>
-    </div>
-
-    <!-- 4. VỆ SINH RĂNG MIỆNG CHUẨN KHI NIỀNG -->
-    <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
-          <i class="fa-solid fa-pump-medical"></i>
-          <span>Quy trình 4 bước vệ sinh răng miệng</span>
-        </div>
-        <span class="text-[10px] text-slate-400 whitespace-nowrap">Chuẩn y khoa</span>
-      </div>
-
-      <div class="grid grid-cols-2 gap-2 text-xs">
-        <!-- Bước 1: Bàn chải rãnh -->
-        <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
-          <div class="w-7 h-7 rounded-lg bg-teal-950 text-teal-400 flex items-center justify-center text-xs border border-teal-800/60 mb-0.5">
-            <i class="fa-solid fa-tooth"></i>
-          </div>
-          <div class="text-[10px] font-bold text-teal-400 uppercase leading-tight">Bước 1 • Bàn chải rãnh</div>
-          <div class="font-bold text-white text-[11px] leading-tight">Chải răng nghiêng 45°</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Chải sạch mặt trên và dưới từng mắc cài.</div>
+      <!-- 3. GIAI ĐOẠN ĐẦU: 7 NGÀY ĐẦU SAU GẮN MẮC CÀI -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span>Giai đoạn mới gắn mắc cài (7 ngày đầu)</span>
         </div>
 
-        <!-- Bước 2: Bàn chải kẽ -->
-        <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
-          <div class="w-7 h-7 rounded-lg bg-blue-950 text-blue-400 flex items-center justify-center text-xs border border-blue-800/60 mb-0.5">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-          </div>
-          <div class="text-[10px] font-bold text-blue-400 uppercase leading-tight">Bước 2 • Bàn chải kẽ</div>
-          <div class="font-bold text-white text-[11px] leading-tight">Luồn dưới dây cung</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Xoay nhẹ làm sạch 4 góc mắc cài.</div>
-        </div>
-
-        <!-- Bước 3: Tăm nước / Chỉ nha khoa -->
-        <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
-          <div class="w-7 h-7 rounded-lg bg-amber-950 text-amber-400 flex items-center justify-center text-xs border border-amber-800/60 mb-0.5">
-            <i class="fa-solid fa-droplet"></i>
-          </div>
-          <div class="text-[10px] font-bold text-amber-400 uppercase leading-tight">Bước 3 • Tăm nước / Chỉ</div>
-          <div class="font-bold text-white text-[11px] leading-tight">Làm sạch kẽ răng</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Đánh bay mảng bám đọng sâu ở kẽ răng.</div>
-        </div>
-
-        <!-- Bước 4: Nước súc miệng -->
-        <a href="https://youtu.be/uUprFZukayc" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 hover:border-purple-400 space-y-1 transition block group">
-          <div class="flex items-center justify-between mb-0.5">
-            <div class="w-7 h-7 rounded-lg bg-purple-950 text-purple-400 flex items-center justify-center text-xs border border-purple-800/60">
-              <i class="fa-solid fa-bottle-water"></i>
+        <!-- VIDEO 1 -->
+        <a href="https://youtu.be/X1AQdLhuW1Q" target="_blank" rel="noopener noreferrer" class="p-3 bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/40 hover:border-amber-400 rounded-xl flex items-center justify-between gap-2.5 transition group">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-lg shrink-0 border border-amber-500/30">
+              <i class="fa-brands fa-youtube text-red-500"></i>
             </div>
-            <i class="fa-brands fa-youtube text-red-500 text-xs group-hover:scale-110 transition-transform"></i>
+            <div class="min-w-0">
+              <div class="font-bold text-white text-xs group-hover:text-amber-200 transition-colors truncate">Video: Trải nghiệm 48h đầu gắn mắc cài</div>
+              <div class="text-[11px] text-slate-400 truncate">Những điều sẽ diễn ra & cách vượt qua êm ái</div>
+            </div>
           </div>
-          <div class="text-[10px] font-bold text-purple-400 uppercase leading-tight">Bước 4 • Súc miệng</div>
-          <div class="font-bold text-white text-[11px] group-hover:text-purple-200 transition-colors leading-tight whitespace-nowrap">Chọn loại chuẩn &rarr;</div>
-          <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Ngừa ố vàng, sâu men răng.</div>
+          <i class="fa-solid fa-circle-play text-amber-400 text-base group-hover:scale-110 transition-transform shrink-0"></i>
+        </a>
+
+        <!-- Răng bị ê ẩm -->
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-face-grimace text-amber-400 shrink-0"></i>
+              <span>Răng bị ê ẩm, căng tức có sao không?</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• <strong>Hiện tượng bình thường:</strong> Răng bắt đầu nhận lực di chuyển nên sẽ hơi ê ẩm trong 3–5 ngày đầu, sau đó sẽ êm dần.</p>
+            <p>• <strong>Cách xử trí:</strong> Ăn đồ mềm, súc miệng nước ấm nhẹ hoặc chườm mát ngoài má. Nếu quá khó chịu, bạn có thể uống 1 viên giảm đau (Paracetamol 500mg) theo hướng dẫn Bác sĩ.</p>
+          </div>
+        </details>
+
+        <!-- Mẹo giảm ê nhức tự nhiên -->
+        <details class="group bg-slate-900/80 border border-teal-500/40 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-teal-300 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-snowflake text-teal-400 shrink-0"></i>
+              <span>Mẹo giảm ê nhức tự nhiên (Không lạm dụng thuốc)</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-teal-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• <strong>Chườm mát ngoài má:</strong> Dùng khăn bọc đá lạnh áp nhẹ vào má 10–15 phút trong 24–48h đầu giúp co mạch, dịu cơn ê tức rất nhanh.</p>
+            <p>• <strong>Súc miệng nước muối ấm:</strong> Pha nước muối ấm nhạt súc miệng 3–4 lần/ngày giúp kháng viêm, làm dịu niêm mạc nướu và vết cọ xát.</p>
+            <p>• <strong>Thư giãn khớp cắn:</strong> Tránh nghiến hoặc cắn chặt hai hàm răng vào nhau khi đang ê ẩm để dây chằng cuống răng được nghỉ ngơi.</p>
+          </div>
+        </details>
+
+        <!-- Ăn uống -->
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-utensils text-teal-400 shrink-0"></i>
+              <span>Chế độ ăn uống: Nên ăn gì & kiêng gì?</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• <strong class="text-teal-300">Nên ăn:</strong> Cháo, súp, cơm mềm, sinh tố, sữa chua, trứng, thịt băm nhỏ hoặc cắt lát mỏng.</p>
+            <p>• <strong class="text-rose-400">Tuyệt đối tránh:</strong> Cắn đồ cứng (xương, sụn, đá viên), đồ dính (kẹo dẻo, kẹo cao su), không dùng răng cửa để cắn xé quả ổi/táo/bánh mì giòn (hãy cắt nhỏ bằng dao trước khi ăn).</p>
+          </div>
+        </details>
+
+        <!-- Sáp nha khoa -->
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-heart text-blue-400 shrink-0"></i>
+              <span>Hướng dẫn bôi sáp chống cọ xát & nhiệt miệng</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-2 leading-relaxed bg-slate-950/40">
+            <p>1. Lau khô bề mặt mắc cài hoặc đầu dây cung đang bị cọ vào môi/má.</p>
+            <p>2. Lấy 1 lượng sáp nhỏ bằng hạt đậu xanh, dùng ngón tay vo tròn lại.</p>
+            <p>3. Ấn nhẹ và miết miếng sáp phủ kín lên vị trí cọ xát (Tháo sáp ra trước khi ăn uống, nếu lỡ nuốt phải sáp cũng hoàn toàn vô hại).</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- 4. VỆ SINH RĂNG MIỆNG CHUẨN KHI NIỀNG -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-pump-medical"></i>
+            <span>Quy trình 4 bước vệ sinh răng miệng</span>
+          </div>
+          <span class="text-[10px] text-slate-400 whitespace-nowrap">Chuẩn y khoa</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <!-- Bước 1 -->
+          <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
+            <div class="w-7 h-7 rounded-lg bg-teal-950 text-teal-400 flex items-center justify-center text-xs border border-teal-800/60 mb-0.5">
+              <i class="fa-solid fa-tooth"></i>
+            </div>
+            <div class="text-[10px] font-bold text-teal-400 uppercase leading-tight">Bước 1 • Bàn chải rãnh</div>
+            <div class="font-bold text-white text-[11px] leading-tight">Chải răng nghiêng 45°</div>
+            <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Chải sạch mặt trên và dưới từng mắc cài.</div>
+          </div>
+
+          <!-- Bước 2 -->
+          <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
+            <div class="w-7 h-7 rounded-lg bg-blue-950 text-blue-400 flex items-center justify-center text-xs border border-blue-800/60 mb-0.5">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <div class="text-[10px] font-bold text-blue-400 uppercase leading-tight">Bước 2 • Bàn chải kẽ</div>
+            <div class="font-bold text-white text-[11px] leading-tight">Luồn dưới dây cung</div>
+            <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Xoay nhẹ làm sạch 4 góc mắc cài.</div>
+          </div>
+
+          <!-- Bước 3 -->
+          <div class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-slate-700/70 space-y-1 hover:border-teal-500/40 transition">
+            <div class="w-7 h-7 rounded-lg bg-amber-950 text-amber-400 flex items-center justify-center text-xs border border-amber-800/60 mb-0.5">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="text-[10px] font-bold text-amber-400 uppercase leading-tight">Bước 3 • Tăm nước / Chỉ</div>
+            <div class="font-bold text-white text-[11px] leading-tight">Làm sạch kẽ răng</div>
+            <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Đánh bay mảng bám đọng sâu ở kẽ răng.</div>
+          </div>
+
+          <!-- Bước 4 -->
+          <a href="https://youtu.be/uUprFZukayc" target="_blank" rel="noopener noreferrer" class="p-2.5 sm:p-3 rounded-xl bg-slate-900/90 border border-purple-500/40 hover:border-purple-400 space-y-1 transition block group">
+            <div class="flex items-center justify-between mb-0.5">
+              <div class="w-7 h-7 rounded-lg bg-purple-950 text-purple-400 flex items-center justify-center text-xs border border-purple-800/60">
+                <i class="fa-solid fa-bottle-water"></i>
+              </div>
+              <i class="fa-brands fa-youtube text-red-500 text-xs group-hover:scale-110 transition-transform"></i>
+            </div>
+            <div class="text-[10px] font-bold text-purple-400 uppercase leading-tight">Bước 4 • Súc miệng</div>
+            <div class="font-bold text-white text-[11px] group-hover:text-purple-200 transition-colors leading-tight whitespace-nowrap">Chọn loại chuẩn &rarr;</div>
+            <div class="text-[10px] sm:text-[11px] text-slate-400 leading-tight">Ngừa ố vàng, sâu men răng.</div>
+          </a>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <a href="https://youtu.be/lnKaykOuk6g" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full py-2.5 px-2 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-300 font-semibold text-xs transition text-center">
+          <i class="fa-brands fa-youtube text-red-500 text-sm shrink-0"></i>
+          <span class="whitespace-nowrap truncate">Xem Video Hướng Dẫn Vệ Sinh Chi Tiết</span>
         </a>
       </div>
 
-      <!-- VIDEO 2 -->
-      <a href="https://youtu.be/lnKaykOuk6g" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full py-2.5 px-2 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-teal-300 font-semibold text-xs transition text-center">
-        <i class="fa-brands fa-youtube text-red-500 text-sm shrink-0"></i>
-        <span class="whitespace-nowrap truncate">Xem Video Hướng Dẫn Vệ Sinh Chi Tiết</span>
-      </a>
+      <!-- 5. BỘ DỤNG CỤ CỨU HỘ BỎ TÚI -->
+      <div class="bg-gradient-to-r from-slate-800 to-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md overflow-hidden">
+        <div class="flex items-center justify-between gap-1.5 flex-wrap">
+          <div class="flex items-center gap-1.5 text-amber-300 font-bold text-xs uppercase tracking-wider min-w-0">
+            <i class="fa-solid fa-kit-medical text-amber-400 shrink-0"></i>
+            <span class="truncate">Bộ dụng cụ cứu hộ bỏ túi</span>
+          </div>
+          <span class="text-[10px] text-amber-300 font-medium px-2 py-0.5 rounded bg-amber-500/20 border border-amber-500/30 shrink-0">
+            Luôn mang theo
+          </span>
+        </div>
+        <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+          Khi đi học, đi làm hoặc du lịch xa, hãy luôn để sẵn trong túi xách <strong>4 món bất ly thân</strong> sau:
+        </p>
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
+            <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
+              <i class="fa-solid fa-shield-heart text-blue-400 text-xs shrink-0"></i>
+              <span class="truncate">1. Sáp nha khoa</span>
+            </div>
+            <div class="text-[10px] text-slate-400 leading-tight">Cứu nguy ngay khi mắc cài cọ loét má.</div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
+            <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
+              <i class="fa-solid fa-wand-magic-sparkles text-teal-400 text-xs shrink-0"></i>
+              <span class="truncate">2. Bàn chải kẽ</span>
+            </div>
+            <div class="text-[10px] text-slate-400 leading-tight">Lấy sạch thức ăn dắt sau mỗi bữa ăn.</div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
+            <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
+              <i class="fa-solid fa-box-archive text-amber-400 text-xs shrink-0"></i>
+              <span class="truncate">3. Hộp đựng nhỏ</span>
+            </div>
+            <div class="text-[10px] text-slate-400 leading-tight">Cất giữ hạt mắc cài sạch nếu bị bong.</div>
+          </div>
+          <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
+            <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
+              <i class="fa-solid fa-ring text-indigo-400 text-xs shrink-0"></i>
+              <span class="truncate">4. Chun liên hàm</span>
+            </div>
+            <div class="text-[10px] text-slate-400 leading-tight">Đủ chun thay mới 2–3 ngày/lần đều đặn.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. HƯỚNG DẪN 3 GÓC CHỤP ẢNH GỬI BÁC SĨ -->
+      <div class="bg-gradient-to-r from-teal-950/60 via-slate-800 to-slate-800 border border-teal-500/40 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-teal-300 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-camera"></i>
+            <span>Hướng dẫn chụp ảnh gửi Bác sĩ</span>
+          </div>
+          <span class="text-[10px] text-teal-400 font-medium whitespace-nowrap">Chẩn đoán nhanh</span>
+        </div>
+        <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+          Khi cần Bác sĩ kiểm tra sự cố từ xa, hãy dùng 2 ngón tay kéo khóe môi và chụp <strong>3 góc rõ nét</strong> sau:
+        </p>
+        <div class="grid grid-cols-3 gap-1.5 text-center text-xs">
+          <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
+            <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 1</div>
+            <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nhìn thẳng</div>
+            <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Cắn chặt 2 hàm</div>
+          </div>
+          <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
+            <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 2</div>
+            <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nghiêng Trái</div>
+            <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Lộ răng hàm</div>
+          </div>
+          <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
+            <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 3</div>
+            <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nghiêng Phải</div>
+            <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Lộ răng hàm</div>
+          </div>
+        </div>
+
+        <!-- VIDEO: Hướng dẫn chụp ảnh -->
+        <a href="https://youtu.be/jaK_Xy9z99o" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-900/90 border border-teal-500/40 hover:border-teal-300 rounded-xl flex items-center justify-between gap-2.5 transition group">
+          <div class="flex items-center gap-2.5 min-w-0">
+            <div class="w-8 h-8 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center text-base shrink-0 border border-red-500/30">
+              <i class="fa-brands fa-youtube text-red-500"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="font-bold text-white text-xs group-hover:text-teal-200 transition-colors truncate">Video: Hướng dẫn tự chụp ảnh răng tại nhà</div>
+              <div class="text-[10px] text-slate-400 truncate">Cách lấy nét & góc chụp chuẩn để Bác sĩ xem rõ nhất</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-circle-play text-teal-400 text-sm group-hover:scale-110 transition-transform shrink-0"></i>
+        </a>
+
+        <!-- Nút mở Zalo gửi ảnh -->
+        <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs shadow-md transition whitespace-nowrap">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Mở Zalo Gửi 3 Góc Ảnh Cho Bác Sĩ</span>
+        </a>
+      </div>
+
+      <!-- 7. QUY TẮC ĐEO CHUN LIÊN HÀM -->
+      <details class="group bg-slate-800 border border-indigo-500/40 rounded-2xl overflow-hidden shadow-md">
+        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-indigo-300 select-none">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-ring shrink-0"></i>
+            <span>Quy tắc vàng khi đeo Chun liên hàm (Kéo khớp cắn)</span>
+          </span>
+          <i class="fa-solid fa-plus text-xs text-indigo-400 group-open:rotate-45 transition-transform shrink-0"></i>
+        </summary>
+        <div class="p-3.5 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-2 bg-slate-950/40">
+          <div>• <strong>Thời gian đeo:</strong> Đeo liên tục <strong>20 – 22 tiếng/ngày</strong> (chỉ tháo ra khi ăn uống và vệ sinh răng miệng).</div>
+          <div>• <strong>Tần suất thay chun:</strong> Thay chun mới <strong>2 – 3 ngày một lần</strong> theo đúng hướng dẫn chỉ định của Bác sĩ.</div>
+          <div>• <strong>Nếu quên đeo:</strong> Tuyệt đối không được đeo gấp đôi số chun vào ngày hôm sau vì lực quá mạnh sẽ gây tổn thương cuống răng. Hãy quay lại lịch đeo đều đặn ngay khi nhớ ra.</div>
+        </div>
+      </details>
+
+      <!-- 8. XỬ LÝ CÁC TÌNH HUỐNG THƯỜNG GẶP (ĐÃ BỎ MỤC MÀU CHUN THEO YÊU CẦU) -->
+      <div class="space-y-2 pt-1">
+        <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider px-1">
+          Giải đáp & Xử lý các tình huống tại nhà
+        </h2>
+
+        <!-- Tình huống 1: Bong mắc cài -->
+        <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-exclamation text-rose-400 shrink-0"></i>
+              <span>1. Bị bong / sút hạt mắc cài thì làm sao?</span>
+            </span>
+            <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
+            <div>• <strong>Trường hợp 1 (Mắc cài còn trên dây cung):</strong> Dùng sáp nha khoa bọc chặt mắc cài lại để không bị xoay tròn hay cọ xát gây xước môi má.</div>
+            <div>• <strong>Trường hợp 2 (Mắc cài rơi ra ngoài):</strong> Hãy cất mắc cài vào một chiếc hộp sạch và mang đến phòng khám để Bác sĩ gắn lại cho bạn.</div>
+            <div>• <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="text-teal-300 font-bold underline">Nhắn tin Zalo phòng khám (0349622964)</a> để được xếp lịch hẹn gắn lại thuận tiện nhất.</div>
+          </div>
+        </details>
+
+        <!-- Tình huống 2: Dây cung đâm má -->
+        <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-tooth text-amber-400 shrink-0"></i>
+              <span>2. Đầu dây cung phía trong cùng đâm vào má?</span>
+            </span>
+            <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
+            <div>• Khi các răng di chuyển đều lại, phần đuôi dây cung thừa ra có thể trượt dài về phía sau và cọ vào má.</div>
+            <div>• <strong>Xử trí tạm thời:</strong> Dùng một cục sáp lớn bọc kín đầu dây nhọn lại.</div>
+            <div>• Ghé qua phòng khám (chỉ mất 1–2 phút) để Bác sĩ bấm cắt đuôi dây cung thừa cho bạn êm ái trở lại.</div>
+          </div>
+        </details>
+
+        <!-- Tình huống 3: Lỡ nuốt phải mắc cài -->
+        <details class="group bg-slate-800 border border-emerald-500/40 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-emerald-300 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
+              <span>3. Lỡ nuốt phải hạt mắc cài / chun / sáp có sao không?</span>
+            </span>
+            <i class="fa-solid fa-plus text-xs text-emerald-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
+            <p>• <strong>Bạn hoàn toàn an tâm:</strong> Mắc cài, chun chỉnh nha và sáp bảo vệ đều là <strong>vật liệu y tế trơ sinh học</strong>, bề mặt trơn láng và rất nhỏ.</p>
+            <p>• Nếu lỡ nuốt phải khi ăn hoặc ngủ, chúng sẽ tự đào thải tự nhiên ra ngoài theo đường tiêu hóa sau 24–48h mà không gây tổn thương hay ngộ độc nào cho cơ thể.</p>
+          </div>
+        </details>
+
+        <!-- Tình huống 4: Răng lung lay nhẹ -->
+        <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-shield text-blue-400 shrink-0"></i>
+              <span>4. Răng có cảm giác lung lay nhẹ có sao không?</span>
+            </span>
+            <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed">
+            Bạn hoàn toàn yên tâm! Trong quá trình niềng, xương ổ răng sẽ có hiện tượng tiêu xương sinh lý ở phía chịu lực và bồi đắp xương mới ở phía đối diện để răng di chuyển. Răng sẽ hơi lung lay nhẹ và chắc chắn trở lại sau khi kết thúc điều trị.
+          </div>
+        </details>
+
+        <!-- Tình huống 5: Tuột chun -->
+        <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-link text-purple-400 shrink-0"></i>
+              <span>5. Tuột chun đơn / Đứt chun liên hàm / Đứt thun chuỗi?</span>
+            </span>
+            <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1">
+            <div>• Nếu chỉ tuột 1 chiếc chun đơn mà mắc cài không lỏng, bạn hoàn toàn có thể đợi đến kỳ hẹn tiếp theo.</div>
+            <div>• Nếu đứt thun chuỗi đóng khoảng hoặc rơi chun liên hàm, hãy nhắn Zalo để Bác sĩ hướng dẫn tự đeo lại hoặc xếp lịch thay chun mới.</div>
+          </div>
+        </details>
+      </div>
+
+      <!-- 9. BẢN ĐỒ CHỈ ĐƯỜNG & LƯU Ý ĐẶT LỊCH -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap min-w-0">
+            <i class="fa-solid fa-location-dot shrink-0"></i>
+            <span class="truncate">Vị trí phòng khám & Chỉ đường</span>
+          </div>
+          <span class="text-[10px] text-amber-400 font-semibold whitespace-nowrap shrink-0 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30">
+            <i class="fa-solid fa-calendar-check mr-1"></i>Cần đặt hẹn trước
+          </span>
+        </div>
+
+        <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-xs space-y-1 leading-relaxed">
+          <div class="font-bold flex items-center gap-1.5 text-amber-300">
+            <i class="fa-solid fa-triangle-exclamation shrink-0"></i>
+            <span>Lưu ý quan trọng trước khi qua:</span>
+          </div>
+          <div class="text-[11px] sm:text-xs">
+            Bác sĩ thường có lịch phẫu thuật và công tác lâm sàng. <strong>Quý khách vui lòng liên hệ đặt trước lịch hẹn</strong> qua Hotline hoặc Zalo trước khi đến để được tiếp đón chu đáo nhất.
+          </div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/z1THdonYirJDsAZDA" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900/90 border border-teal-500/40 hover:border-teal-300 rounded-xl flex items-center justify-between gap-3 transition group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div class="w-10 h-10 rounded-xl bg-teal-950 text-teal-400 flex items-center justify-center text-lg shrink-0 border border-teal-800/60">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div class="min-w-0">
+              <div class="font-bold text-white text-xs group-hover:text-teal-200 transition-colors truncate">Nha Khoa Thái Dung trên Google Maps</div>
+              <div class="text-[11px] text-slate-400 truncate">Bấm để mở bản đồ dẫn đường trực tiếp</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-teal-400 text-xs group-hover:scale-110 transition-transform shrink-0"></i>
+        </a>
+      </div>
+
+      <!-- NÚT ĐIỀU HƯỚNG CHUYỂN SANG TRANG 2 Ở CUỐI TRANG 1 -->
+      <button onclick="switchPage(2)" class="w-full p-4 rounded-2xl bg-gradient-to-r from-teal-900/80 via-slate-800 to-indigo-950/80 border border-teal-500/50 hover:border-teal-400 flex items-center justify-between shadow-lg transition group">
+        <div class="flex items-center gap-3 text-left">
+          <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-300 flex items-center justify-center text-lg border border-teal-500/30 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+          <div>
+            <div class="font-bold text-white text-xs sm:text-sm group-hover:text-teal-200 transition-colors">Xem Trang 2: Bài Tập & Kiến Thức Nâng Cao</div>
+            <div class="text-[11px] text-slate-400">Tập đặt lưỡi, chăm sóc Minivis & đeo hàm duy trì</div>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-teal-400 text-sm group-hover:translate-x-1 transition-transform"></i>
+      </button>
+
     </div>
 
-    <!-- 5. BỘ DỤNG CỤ CỨU HỘ BỎ TÚI -->
-    <div class="bg-gradient-to-r from-slate-800 to-slate-800/90 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md overflow-hidden">
-      <div class="flex items-center justify-between gap-1.5 flex-wrap">
-        <div class="flex items-center gap-1.5 text-amber-300 font-bold text-xs uppercase tracking-wider min-w-0">
-          <i class="fa-solid fa-kit-medical text-amber-400 shrink-0"></i>
-          <span class="truncate">Bộ dụng cụ cứu hộ bỏ túi</span>
-        </div>
-        <span class="text-[10px] text-amber-300 font-medium px-2 py-0.5 rounded bg-amber-500/20 border border-amber-500/30 shrink-0">
-          Luôn mang theo
-        </span>
-      </div>
-      <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
-        Khi đi học, đi làm hoặc du lịch xa, hãy luôn để sẵn trong túi xách <strong>4 món bất ly thân</strong> sau:
-      </p>
-      <div class="grid grid-cols-2 gap-2 text-xs">
-        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
-          <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
-            <i class="fa-solid fa-shield-heart text-blue-400 text-xs shrink-0"></i>
-            <span class="truncate">1. Sáp nha khoa</span>
-          </div>
-          <div class="text-[10px] text-slate-400 leading-tight">Cứu nguy ngay khi mắc cài cọ loét má.</div>
-        </div>
-        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
-          <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
-            <i class="fa-solid fa-wand-magic-sparkles text-teal-400 text-xs shrink-0"></i>
-            <span class="truncate">2. Bàn chải kẽ</span>
-          </div>
-          <div class="text-[10px] text-slate-400 leading-tight">Lấy sạch thức ăn dắt sau mỗi bữa ăn.</div>
-        </div>
-        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
-          <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
-            <i class="fa-solid fa-box-archive text-amber-400 text-xs shrink-0"></i>
-            <span class="truncate">3. Hộp đựng nhỏ</span>
-          </div>
-          <div class="text-[10px] text-slate-400 leading-tight">Cất giữ hạt mắc cài sạch nếu bị bong.</div>
-        </div>
-        <div class="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-0.5 min-w-0">
-          <div class="font-bold text-white text-[11px] flex items-center gap-1.5 truncate">
-            <i class="fa-solid fa-ring text-indigo-400 text-xs shrink-0"></i>
-            <span class="truncate">4. Chun liên hàm</span>
-          </div>
-          <div class="text-[10px] text-slate-400 leading-tight">Đủ chun thay mới 2–3 ngày/lần đều đặn.</div>
-        </div>
-      </div>
-    </div>
+    <!-- ==================== NỘI DUNG TRANG 2 (NÂNG CAO & BÀI TẬP LÂM SÀNG) ==================== -->
+    <div id="page-2" class="space-y-4 hidden">
 
-    <!-- 6. HƯỚNG DẪN 3 GÓC CHỤP ẢNH GỬI BÁC SĨ -->
-    <div class="bg-gradient-to-r from-teal-950/60 via-slate-800 to-slate-800 border border-teal-500/40 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-2 text-teal-300 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
-          <i class="fa-solid fa-camera"></i>
-          <span>Hướng dẫn chụp ảnh gửi Bác sĩ</span>
-        </div>
-        <span class="text-[10px] text-teal-400 font-medium whitespace-nowrap">Chẩn đoán nhanh</span>
-      </div>
-      <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
-        Khi cần Bác sĩ kiểm tra sự cố từ xa, hãy dùng 2 ngón tay kéo khóe môi và chụp <strong>3 góc rõ nét</strong> sau:
-      </p>
-      <div class="grid grid-cols-3 gap-1.5 text-center text-xs">
-        <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
-          <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 1</div>
-          <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nhìn thẳng</div>
-          <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Cắn chặt 2 hàm</div>
-        </div>
-        <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
-          <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 2</div>
-          <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nghiêng Trái</div>
-          <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Lộ răng hàm</div>
-        </div>
-        <div class="p-2 rounded-xl bg-slate-900/80 border border-slate-700">
-          <div class="text-teal-400 font-bold text-[10px] mb-0.5">Góc 3</div>
-          <div class="text-[11px] text-slate-200 font-semibold leading-tight">Nghiêng Phải</div>
-          <div class="text-[9px] text-slate-400 mt-0.5 leading-tight">Lộ răng hàm</div>
-        </div>
-      </div>
+      <!-- Nút quay lại Trang 1 -->
+      <button onclick="switchPage(1)" class="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-teal-300 border border-slate-700 flex items-center justify-center gap-2 text-xs font-bold transition shadow-sm">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Quay về Trang 1: Hướng Dẫn Cơ Bản & Cứu Hộ</span>
+      </button>
 
-      <!-- VIDEO: Hướng dẫn chụp ảnh -->
-      <a href="https://youtu.be/jaK_Xy9z99o" target="_blank" rel="noopener noreferrer" class="p-2.5 bg-slate-900/90 border border-teal-500/40 hover:border-teal-300 rounded-xl flex items-center justify-between gap-2.5 transition group">
-        <div class="flex items-center gap-2.5 min-w-0">
-          <div class="w-8 h-8 rounded-lg bg-red-500/20 text-red-400 flex items-center justify-center text-base shrink-0 border border-red-500/30">
-            <i class="fa-brands fa-youtube text-red-500"></i>
-          </div>
-          <div class="min-w-0">
-            <div class="font-bold text-white text-xs group-hover:text-teal-200 transition-colors truncate">Video: Hướng dẫn tự chụp ảnh răng tại nhà</div>
-            <div class="text-[10px] text-slate-400 truncate">Cách lấy nét & góc chụp chuẩn để Bác sĩ xem rõ nhất</div>
+      <!-- 1. BÀI TẬP CƠ CHỨC NĂNG & ĐẶT VỊ TRÍ LƯỠI (MYOFUNCTIONAL THERAPY) -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-indigo-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-lungs"></i>
+            <span>Bài tập cơ chức năng & Vị trí đặt lưỡi đúng</span>
           </div>
         </div>
-        <i class="fa-solid fa-circle-play text-teal-400 text-sm group-hover:scale-110 transition-transform shrink-0"></i>
-      </a>
+        <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+          Tật đẩy lưỡi hoặc thở miệng là nguyên nhân chính khiến răng bị chìa vẩu hoặc tái phát sau niềng. Hãy tập luyện mỗi ngày:
+        </p>
 
-      <!-- Nút mở Zalo gửi ảnh -->
-      <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs shadow-md transition whitespace-nowrap">
-        <i class="fa-solid fa-paper-plane"></i>
-        <span>Mở Zalo Gửi 3 Góc Ảnh Cho Bác Sĩ</span>
-      </a>
-    </div>
+        <!-- Bài tập 1: Vị trí đặt lưỡi chuẩn (Mewing) -->
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-dot text-indigo-400 shrink-0"></i>
+              <span>1. Vị trí đặt đầu lưỡi chuẩn khi nghỉ (Mewing)</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• <strong>Vị trí đúng:</strong> Toàn bộ thân lưỡi và đầu lưỡi phải áp sát nhẹ nhàng lên <strong>vòm miệng trên</strong>, đầu lưỡi đặt ngay sau nếp gấp khẩu cái (cách chân răng cửa trên khoảng 2–3mm, tuyệt đối không chạm vào mặt trong răng cửa).</p>
+            <p>• <strong>Thói quen:</strong> Giữ môi khép nhẹ tự nhiên và thở hoàn toàn bằng mũi suốt cả ngày lẫn lúc ngủ.</p>
+          </div>
+        </details>
 
-    <!-- 7. QUY TẮC ĐEO CHUN LIÊN HÀM -->
-    <details class="group bg-slate-800 border border-indigo-500/40 rounded-2xl overflow-hidden shadow-md">
-      <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-indigo-300 select-none">
-        <span class="flex items-center gap-2">
-          <i class="fa-solid fa-ring shrink-0"></i>
-          <span>Quy tắc vàng khi đeo Chun liên hàm (Kéo khớp cắn)</span>
-        </span>
-        <i class="fa-solid fa-plus text-xs text-indigo-400 group-open:rotate-45 transition-transform shrink-0"></i>
-      </summary>
-      <div class="p-3.5 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-2 bg-slate-950/40">
-        <div>• <strong>Thời gian đeo:</strong> Đeo liên tục <strong>20 – 22 tiếng/ngày</strong> (chỉ tháo ra khi ăn uống và vệ sinh răng miệng).</div>
-        <div>• <strong>Tần suất thay chun:</strong> Thay chun mới <strong>2 – 3 ngày một lần</strong> theo đúng hướng dẫn chỉ định của Bác sĩ.</div>
-        <div>• <strong>Nếu quên đeo:</strong> Tuyệt đối không được đeo gấp đôi số chun vào ngày hôm sau vì lực quá mạnh sẽ gây tổn thương cuống răng. Hãy quay lại lịch đeo đều đặn ngay khi nhớ ra.</div>
-      </div>
-    </details>
-
-    <!-- 8. XỬ LÝ CÁC TÌNH HUỐNG THƯỜNG GẶP & GIẢI ĐÁP TÂM LÝ -->
-    <div class="space-y-2 pt-1">
-      <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider px-1">
-        Giải đáp & Xử lý các tình huống tại nhà
-      </h2>
-
-      <!-- Tình huống 1: Bong mắc cài -->
-      <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-exclamation text-rose-400 shrink-0"></i>
-            <span>1. Bị bong / sút hạt mắc cài thì làm sao?</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
-          <div>• <strong>Trường hợp 1 (Mắc cài còn trên dây cung):</strong> Dùng sáp nha khoa bọc chặt mắc cài lại để không bị xoay tròn hay cọ xát gây xước môi má.</div>
-          <div>• <strong>Trường hợp 2 (Mắc cài rơi ra ngoài):</strong> Hãy cất mắc cài vào một chiếc hộp sạch và mang đến phòng khám để Bác sĩ gắn lại cho bạn.</div>
-          <div>• <a href="https://zalo.me/0349622964" target="_blank" rel="noopener noreferrer" class="text-teal-300 font-bold underline">Nhắn tin Zalo phòng khám (0349622964)</a> để được xếp lịch hẹn gắn lại thuận tiện nhất.</div>
-        </div>
-      </details>
-
-      <!-- Tình huống 2: Dây cung đâm má -->
-      <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-tooth text-amber-400 shrink-0"></i>
-            <span>2. Đầu dây cung phía trong cùng đâm vào má?</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
-          <div>• Khi các răng di chuyển đều lại, phần đuôi dây cung thừa ra có thể trượt dài về phía sau và cọ vào má.</div>
-          <div>• <strong>Xử trí tạm thời:</strong> Dùng một cục sáp lớn bọc kín đầu dây nhọn lại.</div>
-          <div>• Ghé qua phòng khám (chỉ mất 1–2 phút) để Bác sĩ bấm cắt đuôi dây cung thừa cho bạn êm ái trở lại.</div>
-        </div>
-      </details>
-
-      <!-- Tình huống 3: Lỡ nuốt phải mắc cài / thun / sáp (MỚI BỔ SUNG) -->
-      <details class="group bg-slate-800 border border-emerald-500/40 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-emerald-300 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-circle-check text-emerald-400 shrink-0"></i>
-            <span>3. Lỡ nuốt phải hạt mắc cài / chun / sáp có nguy hiểm không?</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-emerald-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
-          <p>• <strong>Bạn hoàn toàn an tâm:</strong> Mắc cài, chun chỉnh nha và sáp bảo vệ đều là <strong>vật liệu y tế trơ sinh học</strong>, bề mặt bo tròn trơn láng và kích thước rất nhỏ.</p>
-          <p>• Nếu lỡ nuốt phải khi đang ăn hoặc ngủ, chúng sẽ tự đào thải tự nhiên ra ngoài theo đường tiêu hóa sau 24–48h mà không gây bất kỳ tổn thương hay ngộ độc nào cho cơ thể.</p>
-        </div>
-      </details>
-
-      <!-- Tình huống 4: Răng lung lay nhẹ -->
-      <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-shield text-blue-400 shrink-0"></i>
-            <span>4. Răng có cảm giác lung lay nhẹ có sao không?</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed">
-          Bạn hoàn toàn yên tâm! Trong quá trình niềng, xương ổ răng sẽ có hiện tượng tiêu xương sinh lý ở phía chịu lực và bồi đắp xương mới ở phía đối diện để răng di chuyển. Răng sẽ hơi lung lay nhẹ và chắc chắn trở lại sau khi kết thúc điều trị.
-        </div>
-      </details>
-
-      <!-- Tình huống 5: Mẹo chọn màu chun tôn da sáng răng (MỚI BỔ SUNG) -->
-      <details class="group bg-slate-800 border border-purple-500/40 rounded-2xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-purple-300 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-palette text-purple-400 shrink-0"></i>
-            <span>5. Mẹo chọn màu chun niềng răng tôn da & sáng răng</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-purple-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1.5">
-          <div>• 🌟 <strong class="text-teal-300">Nên chọn:</strong> Xanh navy, tím pastel, xanh ngọc bích, hồng đất, xám bạc (tạo hiệu ứng tương phản giúp men răng trắng sáng và trẻ trung).</div>
-          <div>• ⚠️ <strong class="text-amber-300">Nên hạn chế:</strong> Màu vàng nhạt (dễ gây hiểu nhầm là thức ăn dắt răng), màu trắng trong suốt (dễ bị ố vàng sau khi ăn cà ri hoặc uống cà phê/trà).</div>
-        </div>
-      </details>
-
-      <!-- Tình huống 6: Tuột chun -->
-      <details class="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden transition">
-        <summary class="flex justify-between items-center p-3.5 cursor-pointer font-semibold text-xs text-slate-200 select-none">
-          <span class="flex items-center gap-2">
-            <i class="fa-solid fa-link text-purple-400 shrink-0"></i>
-            <span>6. Tuột chun đơn / Đứt chun liên hàm / Đứt thun chuỗi?</span>
-          </span>
-          <i class="fa-solid fa-plus text-xs text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
-        </summary>
-        <div class="px-3.5 pb-3.5 pt-1 text-xs text-slate-300 border-t border-slate-700/50 leading-relaxed space-y-1">
-          <div>• Nếu chỉ tuột 1 chiếc chun đơn mà mắc cài không lỏng, bạn hoàn toàn có thể đợi đến kỳ hẹn tiếp theo.</div>
-          <div>• Nếu đứt thun chuỗi đóng khoảng hoặc rơi chun liên hàm, hãy nhắn Zalo để Bác sĩ hướng dẫn tự đeo lại hoặc xếp lịch thay chun mới.</div>
-        </div>
-      </details>
-    </div>
-
-    <!-- 9. BẢN ĐỒ CHỈ ĐƯỜNG & LƯU Ý ĐẶT LỊCH -->
-    <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
-      <div class="flex items-center justify-between gap-2">
-        <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap min-w-0">
-          <i class="fa-solid fa-location-dot shrink-0"></i>
-          <span class="truncate">Vị trí phòng khám & Chỉ đường</span>
-        </div>
-        <span class="text-[10px] text-amber-400 font-semibold whitespace-nowrap shrink-0 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/30">
-          <i class="fa-solid fa-calendar-check mr-1"></i>Cần đặt hẹn trước
-        </span>
+        <!-- Bài tập 2: Tập nuốt đúng cách -->
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-dot text-indigo-400 shrink-0"></i>
+              <span>2. Bài tập nuốt nước bọt chuẩn (Chống đẩy lưỡi)</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• 1. Ngậm miệng, cắn nhẹ 2 hàm răng lại với nhau.</p>
+            <p>• 2. Đưa đầu lưỡi lên vòm họng trên và thực hiện động tác nuốt mà <strong>không cử động môi hoặc cơ cằm</strong>.</p>
+            <p>• 3. Thực hiện lặp lại 20–30 lần mỗi khi nhớ ra trong ngày.</p>
+          </div>
+        </details>
       </div>
 
-      <!-- Hộp lưu ý -->
-      <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-xs space-y-1 leading-relaxed">
-        <div class="font-bold flex items-center gap-1.5 text-amber-300">
-          <i class="fa-solid fa-triangle-exclamation shrink-0"></i>
-          <span>Lưu ý quan trọng trước khi qua:</span>
+      <!-- 2. HƯỚNG DẪN CHĂM SÓC & VỆ SINH MINIVIS CHỈNH NHA -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-teal-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-screwdriver"></i>
+            <span>Chăm sóc & Vệ sinh Minivis (Vít neo chặn)</span>
+          </div>
         </div>
-        <div class="text-[11px] sm:text-xs">
-          Bác sĩ thường có lịch phẫu thuật và công tác lâm sàng. <strong>Quý khách vui lòng liên hệ đặt trước lịch hẹn</strong> qua Hotline hoặc Zalo trước khi đến để được tiếp đón chu đáo nhất.
+
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-brush text-teal-400 shrink-0"></i>
+              <span>Cách chải sạch chân Minivis chống viêm loét</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• Dùng <strong>bàn chải kẽ mềm</strong> xoay nhẹ nhàng quanh cổ và đầu minivis sau mỗi bữa ăn để thức ăn và mảng bám không tích tụ.</p>
+            <p>• Sử dụng tăm bông chấm nước súc miệng kháng khuẩn (Betadine xanh lá hoặc Chlorhexidine) lau sạch quanh chân vít trong tuần đầu cấy vít.</p>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/80 border border-slate-700 rounded-xl overflow-hidden transition">
+          <summary class="flex justify-between items-center p-3 cursor-pointer text-xs font-semibold text-slate-200 select-none">
+            <span class="flex items-center gap-2">
+              <i class="fa-solid fa-triangle-exclamation text-amber-400 shrink-0"></i>
+              <span>Xử lý khi minivis bị lỏng hoặc cọ má</span>
+            </span>
+            <i class="fa-solid fa-plus text-[10px] text-slate-400 group-open:rotate-45 transition-transform shrink-0"></i>
+          </summary>
+          <div class="p-3 text-xs text-slate-300 border-t border-slate-800 space-y-1.5 leading-relaxed bg-slate-950/40">
+            <p>• <strong>Nếu cọ má:</strong> Dùng sáp nha khoa vo tròn bọc kín đầu vít tương tự như mắc cài.</p>
+            <p>• <strong>Nếu vít bị lung lay / lỏng:</strong> Ngưng móc chun vào vít và nhắn tin ngay qua Zalo phòng khám để Bác sĩ kiểm tra và xử lý kịp thời.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- 3. QUY TẮC ĐEO HÀM DUY TRÌ (RETAINER) SAU THÁO NIỀNG -->
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-3.5 sm:p-4 space-y-2.5 shadow-md">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider whitespace-nowrap">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Giai đoạn tháo niềng & Đeo hàm duy trì</span>
+          </div>
+        </div>
+        <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed">
+          Sau khi tháo mắc cài, xương và dây chằng quanh răng cần ít nhất 6–12 tháng để ổn định cấu trúc:
+        </p>
+
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-700/80 space-y-2 text-xs text-slate-300">
+          <div>• <strong>6 tháng đầu tiên:</strong> Đeo hàm duy trì liên tục <strong>20–22 giờ/ngày</strong> (chỉ tháo ra khi ăn uống và đánh răng).</div>
+          <div>• <strong>Sau 6 tháng:</strong> Đeo đều đặn <strong>mỗi tối trước khi đi ngủ</strong>.</div>
+          <div>• <strong>Vệ sinh hàm duy trì:</strong> Chải rửa nhẹ nhàng bằng nước mát và bàn chải lông mềm (Tuyệt đối không ngâm nước nóng vì sẽ làm biến dạng máng).</div>
         </div>
       </div>
 
-      <!-- Nút mở Google Maps -->
-      <a href="https://maps.app.goo.gl/z1THdonYirJDsAZDA" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-900/90 border border-teal-500/40 hover:border-teal-300 rounded-xl flex items-center justify-between gap-3 transition group">
-        <div class="flex items-center gap-3 min-w-0">
-          <div class="w-10 h-10 rounded-xl bg-teal-950 text-teal-400 flex items-center justify-center text-lg shrink-0 border border-teal-800/60">
-            <i class="fa-solid fa-map-location-dot"></i>
-          </div>
-          <div class="min-w-0">
-            <div class="font-bold text-white text-xs group-hover:text-teal-200 transition-colors truncate">Nha Khoa Thái Dung trên Google Maps</div>
-            <div class="text-[11px] text-slate-400 truncate">Bấm để mở bản đồ dẫn đường trực tiếp</div>
-          </div>
-        </div>
-        <i class="fa-solid fa-arrow-up-right-from-square text-teal-400 text-xs group-hover:scale-110 transition-transform shrink-0"></i>
-      </a>
+      <!-- Nút quay lại Trang 1 ở cuối -->
+      <button onclick="switchPage(1)" class="w-full p-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-teal-300 border border-teal-500/40 flex items-center justify-center gap-2 text-xs font-bold transition shadow-md">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        <span>Quay lại Trang 1: Hướng Dẫn Cơ Bản & Cứu Hộ</span>
+      </button>
+
     </div>
 
     <!-- 10. HƯỚNG DẪN CÀI APP RA MÀN HÌNH CHÍNH -->
@@ -517,7 +649,31 @@
     <i class="fa-solid fa-check"></i> Đã sao chép link cẩm nang!
   </div>
 
+  <!-- JAVASCRIPT XỬ LÝ CHUYỂN TRANG TỨC THÌ & COPY LINK -->
   <script>
+    function switchPage(pageNumber) {
+      const page1 = document.getElementById('page-1');
+      const page2 = document.getElementById('page-2');
+      const btn1 = document.getElementById('tab-btn-1');
+      const btn2 = document.getElementById('tab-btn-2');
+
+      if (pageNumber === 1) {
+        page1.classList.remove('hidden');
+        page2.classList.add('hidden');
+
+        btn1.className = "py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-teal-600 text-white shadow-sm";
+        btn2.className = "py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-transparent text-slate-400 hover:text-slate-200";
+      } else {
+        page1.classList.add('hidden');
+        page2.classList.remove('hidden');
+
+        btn2.className = "py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-teal-600 text-white shadow-sm";
+        btn1.className = "py-2 px-2 rounded-lg font-bold text-xs transition flex items-center justify-center gap-1.5 bg-transparent text-slate-400 hover:text-slate-200";
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     function copySiteLink() {
       const url = window.location.href;
       navigator.clipboard.writeText(url).then(() => {
